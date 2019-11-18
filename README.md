@@ -1,6 +1,8 @@
 # ADB-About
 Android Debug Bridge Online document
 
+---------
+
 adb shell df 查看系统盘符
 
 adb shell pm list packages -f 输出所有已经安装的应用
@@ -32,14 +34,16 @@ ADB Server是运行在主机上的一个后台进程。它的作用在于检测U
 
 ## 一、基本用法
 ### 1. 目标设备命令
+> 命令：
 ```
-命令：
   adb [-d|-e|-s <serialNumber>] <command>
-
-作用：
+```
+> 作用：
+```
   为命令指定目标设备，如果只有一个设备/模拟器连接，可以直接使用 adb <command>
-
-示例：
+```
+> 示例：
+```
   先列出设备serialNumber：
   $ adb devices
   List of devices attached
@@ -49,6 +53,8 @@ ADB Server是运行在主机上的一个后台进程。它的作用在于检测U
   再指定设备号进行操作：
   adb -s 10.129.164.6:5555 install test.apk
 ```
+> 参数表<br>
+
 | 参数 | 说明 |
 | :--- | :--- |
 | -d | 指定当前唯一通过 USB 连接的 Android 设备为命令目标 |
