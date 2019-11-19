@@ -71,7 +71,7 @@ adb kill-server
 ```
 启动和停止adb server
 ```
-> 示例：<br>
+> 示例：略
 > 参数表：
 
 ### 3.查看 adb 版本
