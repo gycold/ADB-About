@@ -68,7 +68,7 @@
    + localreserved:<unix domain socket name>
    + localfilesystem:<unix domain socket name>
 
-   示例：`adb forward tcp:12580 tcp:18888`，执行结果：12580
+   示例：`adb reverse tcp:12580 tcp:18888`，执行结果：12580
 
 2. `adb reverse --list`，显示所有从设备发出的反向socket连接
 
