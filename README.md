@@ -13,6 +13,10 @@ adb shell ls -i /system/lib | find "xxx" 查找是否包含xxx
 
 adb shell dumpsys activity | findstr "mFocusedActivity" 通过adb查看当前显示的activity，其中在Windows下使用findstr，在Linux下使用grep
 
+Android 8.0改用：
+
+**adb shell dumpsys activity activities | findstr mResumedActivity**
+
 adb shell dumpsys activity | find "mF" 相当于过滤，只找名为"mF"的activity使用情况信息
 
 adb shell dumpsys window windows | find "mCurrent"     获得当前活动窗口的信息，包名以及活动窗体
