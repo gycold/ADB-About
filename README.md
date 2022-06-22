@@ -17,6 +17,8 @@ Android 8.0改用：
 
 **adb shell dumpsys activity activities | findstr mResumedActivity**
 
+**adb shell dumpsys window | findstr mCurrentFocus**
+
 adb shell dumpsys activity | find "mF" 相当于过滤，只找名为"mF"的activity使用情况信息
 
 adb shell dumpsys window windows | find "mCurrent"     获得当前活动窗口的信息，包名以及活动窗体
